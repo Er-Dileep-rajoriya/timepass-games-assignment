@@ -1,0 +1,105 @@
+.main-center-s3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-center-s3 > div {
+  padding: 7px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(53, 53, 209);
+  border-radius: 12px;
+  /* gap: 10px; */
+  transition: 0.3s ease-in-out;
+}
+
+.main-center-s3 > div:hover {
+  background-color: rgba(53, 53, 209, 0.1);
+}
+
+.main-center-s3 .price {
+  color: hsl(243, 100%, 62%);
+  font-weight: 600;
+}
+
+.main-center-s3 .second-box > p {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.main-center-s3 .second-box > span {
+  color: hsl(216, 3%, 62%);
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.main-center-s3 .first-box {
+  width: 8%;
+}
+
+.main-center-s3 .second-box {
+  flex-grow: 1;
+}
+
+.main-center-s3 .third-box {
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: hsl(213, 96%, 18%);
+  cursor: pointer;
+}
+
+.main-bottom-s3 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-bottom-s3 .back {
+  font-size: 1.2rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-bottom-s3 .back:hover {
+  color: rgb(35, 11, 11);
+  text-decoration: underline;
+}
+
+.main-bottom-s3 .next {
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background-color: hsl(213, 96%, 18%);
+  color: rgb(225, 220, 220);
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.main-bottom-s3 .next:hover {
+  background-color: hsl(213, 56%, 31%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 390px) {
+  .main-center-s3 > div {
+    gap: 10px;
+  }
+}

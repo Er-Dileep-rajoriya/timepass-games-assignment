@@ -1,0 +1,148 @@
+.box {
+  border: 1px solid rgb(121, 121, 182);
+  height: 160px;
+  width: 120px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box:hover {
+  border: 1.5px solid rgb(25, 25, 153);
+  cursor: pointer;
+}
+
+.main-center-s2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box .box-top {
+  height: 50%;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.box .box-bottom {
+  height: 50%;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.box .box-bottom > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.box .box-bottom > span {
+  font-weight: lighter;
+  color: rgb(174, 173, 173);
+}
+
+.plans-container {
+  width: 100%;
+}
+
+.plans-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.plans-container #switch-button {
+  height: 22px;
+  width: 50px;
+  background-color: rgb(14, 14, 69);
+  border-radius: 30px;
+  margin: 0 15px;
+  padding: 2px;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#switch-button .toggle {
+  background-color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+#switch-button.active .toggle {
+  transform: translateX(24px);
+}
+
+.main-bottom-s2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-bottom-s2 .back {
+  font-size: 1.2rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-bottom-s2 .back:hover {
+  color: rgb(35, 11, 11);
+  text-decoration: underline;
+}
+
+.main-bottom-s2 .next {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: rgb(225, 220, 220);
+  font-family: "Ubuntu" sans-serif;
+}
+
+.main-bottom-s2 .next:hover {
+  background-color: hsl(213, 56%, 31%);
+  cursor: pointer;
+}
+
+.select-box {
+  border: 2px solid rgb(25, 25, 153);
+}
+
+@media screen and (max-width: 700px) {
+  .main-center-s2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .box .box-top {
+    width: 20%;
+  }
+
+  .main-bottom-s2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,84 @@
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-top {
+  background-color: hsl(228, 19%, 95%);
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+/* Plan Section */
+.plan-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.plan-section h2 {
+  font-size: 18px;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.change-link {
+  font-size: 14px;
+  color: #656cff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change-link:hover {
+  color: #4045d8;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1d1d1d;
+}
+
+/* Add-ons */
+.addons {
+  margin-top: 10px;
+}
+
+.addons p {
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.addon-price {
+  color: #444;
+}
+
+/* Total */
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 95%;
+}
+
+.total-price {
+  color: #5a48e3;
+}
+
+@media screen and (max-width: 700px) {
+  .summary-card {
+    width: 100%;
+  }
+}

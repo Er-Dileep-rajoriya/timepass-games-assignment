@@ -1,0 +1,25 @@
+.thanks-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.main-inner-thank {
+  width: 400px;
+}
+
+.thanks-page > span {
+  width: 70%;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.thanks-page img {
+  object-fit: contain;
+}
